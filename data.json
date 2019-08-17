@@ -1,0 +1,113 @@
+{
+  "products": {
+    "A1": {
+      "name": "coke1",
+      "price": 2.75,
+      "inventory": 6,
+      "maxinventory": 10
+    },
+    "A2": {
+      "name": "coke2",
+      "price": 3.3,
+      "inventory": 4,
+      "maxinventory": 10
+    },
+    "A3": {
+      "name": "coke3",
+      "price": 3.7,
+      "inventory": 7,
+      "maxinventory": 10
+    },
+    "B1": {
+      "name": "coke4",
+      "price": 11.65,
+      "inventory": 8,
+      "maxinventory": 10
+    },
+    "B2": {
+      "name": "coke5",
+      "price": 5.7,
+      "inventory": 2,
+      "maxinventory": 10
+    },
+    "B3": {
+      "name": "coke6",
+      "price": 9.5,
+      "inventory": 3,
+      "maxinventory": 10
+    },
+    "C1": {
+      "name": "coke7",
+      "price": 2.65,
+      "inventory": 1,
+      "maxinventory": 10
+    },
+    "C2": {
+      "name": "coke8",
+      "price": 4.95,
+      "inventory": 8,
+      "maxinventory": 10
+    },
+    "C3": {
+      "name": "coke9",
+      "price": 4.8,
+      "inventory": 7,
+      "maxinventory": 10
+    },
+    "D1": {
+      "name": "coke10",
+      "price": 5,
+      "inventory": 2,
+      "maxinventory": 10
+    },
+    "D2": {
+      "name": "coke11",
+      "price": 6,
+      "inventory": 5,
+      "maxinventory": 10
+    },
+    "D3": {
+      "name": "coke11",
+      "price": 1.15,
+      "inventory": 6,
+      "maxinventory": 10
+    }
+  },
+  "changes": {
+    "toonies": {
+      "value": 2,
+      "numCoins": 50,
+      "maxCoins": 100
+    },
+    "loonies": {
+      "value": 1,
+      "numCoins": 50,
+      "maxCoins": 100
+    },
+    "quaters": {
+      "value": 0.25,
+      "numCoins": 50,
+      "maxCoins": 100
+    },
+    "dimes": {
+      "value": 0.1,
+      "numCoins": 50,
+      "maxCoins": 100
+    },
+    "nicles": {
+      "value": 0.05,
+      "numCoins": 50,
+      "maxCoins": 100
+    },
+    "tens": {
+      "value": 10,
+      "numCoins": 50,
+      "maxCoins": 100
+    },
+    "fives": {
+      "value": 5,
+      "numCoins": 50,
+      "maxCoins": 100
+    }
+  }
+}
