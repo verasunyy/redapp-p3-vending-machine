@@ -51,3 +51,10 @@ describe('setInventory:', () => {
     });
   });
 })
+describe('Dispense Products:', () => {
+  describe('When getting amount = 5, position="A1"', () => {
+    it("should return change = 2.25", () => {
+      expect(venderMachine.dispenseProduct("A1", 5)).toEqual(2.25);
+    });
+  });
+})

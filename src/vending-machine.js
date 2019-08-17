@@ -1,8 +1,6 @@
 const inventory = require('../data.json')
 
 class VendingMachine {
-
-
   constructor(inventory) {
     this.inventory = inventory;
   }
