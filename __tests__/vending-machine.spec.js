@@ -57,4 +57,11 @@ describe('Dispense Products:', () => {
       expect(venderMachine.dispenseProduct("A1", 5)).toEqual(2.25);
     });
   });
+
+  describe('When giving change amount = 13.4', () => {
+    it("should return change = 13.4", () => {
+      expect(venderMachine.dispenseChanges(13.4)).toEqual(13.4);
+      expect(venderMachine.getChangeInventory()).toEqual(inventory.changes);
+    });
+  });
 })
