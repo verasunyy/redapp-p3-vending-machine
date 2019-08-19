@@ -72,10 +72,11 @@ class VendingMachine {
       throw new Error("Product Out of Stock");
     } else {
       let changeAmount = amount - this.getProductPriceByPosition(position)
+      this.dispenseChanges(changeAmount);
       this.setProductInventory(position, -1);
-
-      return this.dispenseChanges(changeAmount);
+      return true
     }
+    return false
   }
 
   dispenseChanges(changeAmount) {

@@ -70,8 +70,8 @@ describe('Dispense Products:', () => {
     });
   });
   describe('When getting amount = 5, position="A1"', () => {
-    it("should return change = 2.25", () => {
-      expect(venderMachine.dispenseProduct("A1", 5)).toEqual(2.25);
+    it("should return true", () => {
+      expect(venderMachine.dispenseProduct("A1", 5)).toEqual(true);
       expect(venderMachine.getChangeInventory()).toEqual(inventory.changes);
       expect(venderMachine.getProductInventoryByPosition("A1")).toEqual(7);
     });
