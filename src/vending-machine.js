@@ -7,6 +7,9 @@ class VendingMachine {
   getAllProductInventory() {
     return this.inventory.products
   }
+  getProductByPosition(position) {
+    return this.inventory.products[position]
+  }
   getProductInventoryByPosition(position) {
     return this.inventory.products[position].inventory
   }
@@ -22,6 +25,16 @@ class VendingMachine {
   }
   getChangeValueByName(name) {
     return this.inventory.changes[name].value
+  }
+
+  setNewProductToPosition(position, name, price, inventory, maxinventory) {
+    this.inventory.products[position] = {
+      "name": name,
+      "price": price,
+      "inventory": inventory,
+      "maxinventory": maxinventory
+    }
+    return this.getProductByPosition(position)
   }
 
   setProductInventory(position, number) {

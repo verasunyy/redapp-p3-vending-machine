@@ -50,6 +50,18 @@ describe('setInventory:', () => {
       expect(() => venderMachine.setChangeInventory("toonies", 26)).toThrow("Over max spot available");
     });
   });
+
+  describe('When set new product to position= "D2", name=coke22, price=14, inventory=6, maxinventory=10', () => {
+    it("should return new product detail by position", () => {
+      expect(venderMachine.setNewProductToPosition("D2", "coke22", 14, 6, 10)).toEqual({
+        "name": "coke22",
+        "price": 14,
+        "inventory": 6,
+        "maxinventory": 10
+      });
+    });
+  });
+
 })
 describe('Dispense Products:', () => {
   describe('When giving change amount = 13.4', () => {
