@@ -61,7 +61,6 @@ describe('setInventory:', () => {
       });
     });
   });
-
 })
 describe('Dispense Products:', () => {
   describe('When giving change amount = 13.4', () => {

@@ -105,7 +105,7 @@ class VendingMachine {
           amount = parseFloat((amount - change.value * numberOfChange).toFixed(2));
         } else {
           array[index].number = this.getChangeInventoryByName(change.name);
-          amount = amount - change.value * this.getChangeInventoryByName(change.name)
+          amount = parseFloat((amount - change.value * this.getChangeInventoryByName(change.name)).toFixed(2))
           if (change.name === "nicles") {
             if (this.getChangeInventoryByName("dimes") >= array[5].number + 3) {
               array[4].number--;
