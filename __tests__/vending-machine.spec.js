@@ -52,16 +52,18 @@ describe('setInventory:', () => {
   });
 })
 describe('Dispense Products:', () => {
-  describe('When getting amount = 5, position="A1"', () => {
-    it("should return change = 2.25", () => {
-      expect(venderMachine.dispenseProduct("A1", 5)).toEqual(2.25);
-    });
-  });
-
   describe('When giving change amount = 13.4', () => {
     it("should return change = 13.4", () => {
       expect(venderMachine.dispenseChanges(13.4)).toEqual(13.4);
       expect(venderMachine.getChangeInventory()).toEqual(inventory.changes);
     });
   });
+  describe('When getting amount = 5, position="A1"', () => {
+    it("should return change = 2.25", () => {
+      expect(venderMachine.dispenseProduct("A1", 5)).toEqual(2.25);
+      expect(venderMachine.getChangeInventory()).toEqual(inventory.changes);
+      expect(venderMachine.getProductInventoryByPosition("A1")).toEqual(7);
+    });
+  });
+
 })

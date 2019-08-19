@@ -58,12 +58,10 @@ class VendingMachine {
     } else if (!this.getProductInventoryByPosition(position)) {
       throw new Error("Product Out of Stock");
     } else {
-      let change = {}
       let changeAmount = amount - this.getProductPriceByPosition(position)
       this.setProductInventory(position, -1);
-      return changeAmount;
 
-
+      return this.dispenseChanges(changeAmount);
     }
   }
 
@@ -103,7 +101,6 @@ class VendingMachine {
             } else {
               throw new Error("Sorry, not enough changes to give back, please try again")
             }
-
           }
         }
       }
